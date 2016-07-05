@@ -1,2 +1,2 @@
-# scripts
-House scripts used for automation
+# Scripts
+Houses scripts used for automation
