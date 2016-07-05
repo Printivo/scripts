@@ -13,7 +13,7 @@ The steps below backs up the database every 30 minutes. Follow them to create a 
     cd /backups
     BACKUP_FILENAME=./databases/printivo_$(date +%s%3N).sql
     mysqldump -u YOUR_USERNAME -pYOUR_PASSWORD printivo > $BACKUP_FILENAME
-    aws s3 sync ./databases s3://printivo-database-backups
+    aws s3 sync ./databases s3://s3-bucket-name
     rm $BACKUP_FILENAME
     ```
 
